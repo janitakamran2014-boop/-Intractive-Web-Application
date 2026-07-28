@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1><i class="fa-solid fa-user-graduate"></i> Student Management System</h1>
+
+        <button id="themeBtn">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </header>
+
+    <!-- Dashboard -->
+    <section class="dashboard">
+
+        <div class="card">
+            <h2 id="totalStudents">0</h2>
+            <p>Total Students</p>
+        </div>
+
+        <div class="card">
+            <h2 id="averageAge">0</h2>
+            <p>Average Age</p>
+        </div>
+
+        <div class="card">
+            <h2 id="courseCount">0</h2>
+            <p>Courses</p>
+        </div>
+
+    </section>
+
+    <!-- Search -->
+    <section class="search-section">
+
+        <input
+        type="text"
+        id="search"
+        placeholder="Search Student...">
+
+    </section>
+
+    <!-- Form -->
+    <section class="form-section">
+
+        <h2>Add Student</h2>
+
+        <form id="studentForm">
+
+            <input
+            type="text"
+            id="name"
+            placeholder="Student Name"
+            required>
+
+            <input
+            type="number"
+            id="age"
+            placeholder="Age"
+            required>
+
+            <input
+            type="text"
+            id="course"
+            placeholder="Course"
+            required>
+
+            <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            required>
+
+            <button type="submit">
+                Save Student
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- Student Table -->
+    <section class="table-section">
+
+        <h2>Student List</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Course</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="studentTable">
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Student Management System
+        </p>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+
+</body>
+</html>

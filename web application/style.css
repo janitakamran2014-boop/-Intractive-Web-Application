@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #333;
+    transition: 0.3s;
+}
+
+/* Header */
+
+header {
+    background: #2563eb;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 26px;
+}
+
+header button {
+    background: white;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* Dashboard */
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+.card h2 {
+    color: #2563eb;
+    font-size: 35px;
+}
+
+
+
+/* Search */
+
+.search-section {
+    padding: 20px;
+}
+
+
+.search-section input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+
+
+/* Form */
+
+.form-section {
+
+    background: white;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+
+.form-section h2 {
+    margin-bottom:20px;
+}
+
+
+form {
+    display:grid;
+    gap:15px;
+}
+
+
+form input {
+
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+
+form button {
+
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:14px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+
+form button:hover {
+
+    background:#1d4ed8;
+}
+
+
+
+/* Table */
+
+.table-section {
+
+    margin:20px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+
+}
+
+
+table {
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+
+th {
+
+    background:#2563eb;
+    color:white;
+    padding:12px;
+
+}
+
+
+td {
+
+    padding:12px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+
+}
+
+
+
+/* Buttons */
+
+.edit {
+
+    background:#16a34a;
+    color:white;
+    padding:8px 12px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+
+}
+
+
+.delete {
+
+    background:#dc2626;
+    color:white;
+    padding:8px 12px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+
+}
+
+
+
+/* Footer */
+
+footer {
+
+    text-align:center;
+    padding:20px;
+    background:#111827;
+    color:white;
+
+}
+
+
+
+/* Dark Mode */
+
+.dark {
+
+    background:#111827;
+    color:white;
+
+}
+
+
+.dark .card,
+.dark .form-section,
+.dark .table-section {
+
+    background:#1f2937;
+    color:white;
+
+}
+
+
+.dark input {
+
+    background:#374151;
+    color:white;
+
+}
+
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .dashboard{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    table{
+
+        font-size:12px;
+
+    }
+
+
+    header h1{
+
+        font-size:18px;
+
+    }
+
+}
